@@ -4,14 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Femstory</title>
   </head>
   <body>
-    <header></header>
     
-    
-    <footer></footer>
-    
+    <header>
+      <img class="headerLogo homeBtn" alt="home_logo.png"
+       src="http://drive.google.com/uc?export=view&id=15n22pSMafRcXVJs0mV2OAROeHHdxABLW">
+       <input type="search" id="searchBar" name="q">
+       <button class="searchBtn btn"><i class="fas fa-search" id="searchBtn"></i></button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" id="professionBtn btn">Profesiones</a></li>
+        <li><a href="#" id="countryBtn btn">Países</a></li>
+        <li><a href="#" id="timeBtn btn">Tiempo</a></li>
+        <li><a href="#" id="gameBtn btn">Juegos</a></li>
+    </nav>
+
+    <content>
+      <section class="generalBlock introBlock" id="introBlock"></section>
+      <p>Femstory busca minimizar y prevenir los estereotipos al enseñar otra perspectiva de la historia, que muestre a las diferentes mujeres que han resaltado, innovado e inspirado a lo largo de ella.</p> 
+      <br>
+      <p>Puedes buscarlos segun su profesion, el tiempo que vivieron o su pais de origen utilizando los botones de la barra superior</p>
+
+      <section class="generalBlock professionBlock" id="professionBlock" style="display:none;">
+      
+        <div id= "profesionArts" style="display:none;">Arte</div>
+          <button id= "artCards">Arte</button>
+            <div id= "example" style= "display:none;">
+            <img class="photo" alt="fridita.png"
+       src="http://drive.google.com/uc?export=view&id=1wcmPTkkLWPa0QPljOjRRQS1KnM7zi3oo">
+            </div>
+            <!--aquí se muestra la card de frida kalho en otro div para ejemplo-->
+            
+            
+        <div id= "profesionPolitcs" style="display:none;">Politica</div>
+          <button id= "politicsCards">Politica</button>
+            <div id= "example2" style= "display:none;">
+             <img class="photo" alt="teresita.png"
+       src="http://drive.google.com/uc?export=view&id=1EnItQN0T_gXYUvfglX-RFhz8GTo5LV5W">
+       </div>
+            
+            <!--aquí se muestra la card de teresa de calcuta para ejemplo-->
+           
+        <div id= "profesionScience" style="display:none;">Ciencia</div>        
+          <button id= "scienceCards">Ciencia</button>
+          <div id= "example3" style= "display:none;">
+             <img class="photo" alt="marie.png"
+       src="http://drive.google.com/uc?export=view&id=1iOQH5OrnZKvKses8EhLyTAInO2tKV_Oq">
+            </div>
+         
+          <!--aquí se muestra la card de marie s. curie para ejemplo-->
+          
+      </section>
+      
+      <section class="generalBlock countryBlock" id="countryBlock"></section>
+      
+      <section class="generalBlock timeBlock" id="timeBlock"></section>
+
+      <section class="generalBlock gameBlock" id="gameBlock"></section>
+
+    </content>
+
+    <!-- <button id= "prueba">prueba</button> -->
+    <footer class="footText">© 2019 Las chimichangas (Andrea Díaz, KAren Garzón y
+      Nancy Rodríguez), Ilustraciones por <a class="infoLink"
+      href="https://www.behance.net/andreayanezh">Andrea Yáñez</a></footer>
+
+
     <script src="main.js"></script>
     <script src="./data/datosmujeres.js"></script>
     

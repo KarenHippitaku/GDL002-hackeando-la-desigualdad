@@ -1,27 +1,27 @@
-window.datosmujeres = {
-  datawoman: datawoman
-
-};
-
-
-function datawoman(MUJERES){
-  let name=[];
-  for(let i=0;i<MUJERES.length; i++){
-    let pruebadata={
-      "nombre": MUJERES[i].Nombre,
-      "tiempo": MUJERES[i].Fecha,
-      "bio": MUJERES[i].Bio,
-      "pais": MUJERES[i].Pais,
-      "profesion": MUJERES[i].Ocupacion
-    };
-    
-    name.push(pruebadata); 
-    
-  }
-  return name;
-  console.log(name);
+function showNextSection(){
+  document.getElementById("professionBlock").style.display = 'block';
 }
+document.getElementById("professionBtn btn").addEventListener('click',showNextSection);
 
 
-//esta funcion aun no sirve, estoy tratando de acceder a la info de la base de datos.
+function showSectionArt(){
+  document.getElementById("example").style.display = 'block';
+}
+document.getElementById("artCards").addEventListener('click', showSectionArt);
+
+function showSectionPolitics(){
+  document.getElementById("example2").style.display = 'block';
+  document.getElementById("example").style.display = 'none';
+}
+document.getElementById("politicsCards").addEventListener('click', showSectionPolitics);
+
+function showSectionScience(){
+  document.getElementById("example3").style.display = 'block';
+  document.getElementById("example2").style.display = 'none';
+}
+document.getElementById("scienceCards").addEventListener('click', showSectionScience);
+
+
+
+
 
