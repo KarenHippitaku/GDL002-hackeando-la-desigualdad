@@ -1,3 +1,7 @@
+//'use strict'
+
+//window.addEventListener("load", () => {
+
 function showNextSection(){
   document.getElementById("professionBlock").style.display = 'block';
 }
@@ -21,7 +25,8 @@ function showSectionScience(){
 }
 document.getElementById("scienceCards").addEventListener('click', showSectionScience);
 
-
+  
+//})
 
 
 
