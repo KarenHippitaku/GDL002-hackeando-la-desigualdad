@@ -8,91 +8,95 @@
      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Femstory</title>
-  </head>
+<title>Femstory</title>
+</head>
   <body>
 
-    <header>
-      <img class="headerLogo homeBtn" alt="home_logo.png"
-       src="http://drive.google.com/uc?export=view&id=15n22pSMafRcXVJs0mV2OAROeHHdxABLW">
-       <input type="search" id="searchBar" name="q">
-       <button class="searchBtn btn"><i class="fas fa-search" id="searchBtn"></i></button>
-    </header>
+  <header>
+  <a href= "#inicio">  <img class="headerLogo homeBtn" alt="home_logo.png"
+       src="http://drive.google.com/uc?export=view&id=1v65WXsrYmdNR4VSzaBgncmzAGKxOWTBG"></a>
+
+    <input class="search" type="search" id="searchBar" name="q">
+    <button class="searchBtn btn search"><i class="fas fa-search" id="searchBtn"></i></button>
+
+  </header>
 
     <nav>
-      <ul>
-        <li><a href="#" id="professionBtn btn">Profesiones</a></li>
-        <li><a href="#" id="countryBtn btn">Países</a></li>
-        <li><a href="#" id="timeBtn btn">Tiempo</a></li>
-        <li><a href="#" id="gameBtn btn">Juegos</a></li>
+      <ul class="nav" >
+        <li class="nav-item"><a class="nav-link active navBtn" id="professionBtn btn">Profesiones</a></li>
+        <li class="nav-item"><a class="nav-link active navBtn" id="countryBtn btn">Países</a></li>
+        <li class="nav-item"><a class="nav-link active navBtn" id="timeBtn btn">Tiempo</a></li>
+        <li class="nav-item"><a class="nav-link active navBtn" id="gameBtn btn">Juegos</a></li>
+      </ul>
     </nav>
 
     <content>
+    <center>
       <section class="generalBlock introBlock" id="introBlock"></section>
+      <div id= "introText">
+      <a name="inicio"></a>
       <p>Femstory busca minimizar y prevenir los estereotipos al enseñar otra </br>
         perspectiva de la historia, que muestre a las diferentes mujeres </br>
         que han resaltado, innovado e inspirado a lo largo de ella.</p>
 
       <p>Puedes buscar a los personajes según su profesion, el tiempo que vivieron </br>
         o su pais de origen utilizando los botones de la barra superior</p>
-
+        </div>
+      </center>
       <section class="generalBlock professionBlock" id="professionBlock" style="display:none;">
 
         <div id= "profesionArts" style="display:none;">Arte</div>
-          <button id= "artCards">Arte</button>
+          <button class= "navBtton" id= "artCards"><img src="http://drive.google.com/uc?export=view&id=1RST2o3J0j7rkPy76mNp0phWfwRoNyrjt">Arte</button>
          <div id= "example" style= "display:none;" class="card">
+
           <h3>FRIDA KAHLO</h3>
+          <img class="photo" alt="fridita.png"
+              src="http://drive.google.com/uc?export=view&id=1wcmPTkkLWPa0QPljOjRRQS1KnM7zi3oo">
           <h4>Nombre de nacimiento: Magdalena Carmen Frida Kahlo Calderón</h4>
           <h4>Su ocupación: Artista </h4>
           <h4>Tiempo de vida: De año 1907 al año 1954</h4>
-            <img class="photo" alt="fridita.png"
-              src="http://drive.google.com/uc?export=view&id=1wcmPTkkLWPa0QPljOjRRQS1KnM7zi3oo">
-          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zd_Mtyi-9Zs" frameborder="0" allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-       </div>
 
-        <div id= "profesionPolitcs" style="display:none;">Politica</div>
-          <button id= "politicsCards">Politica</button>
-       <div class="card" id= "example2" style= "display:none;">
-         <h2>MADRE TERESA DE CALCUTA</h2>
-         <h3>Nombre de nacimiento: Anjezë Gonxhe Bojaxhiu</h3>
-         <h4>Su ocupación: Religiosa </h4>
-         <h4>Tiempo de vida: De año 1910 al año 1997</h4>
-         <img class="photo" alt="teresita.png"
-       src="http://drive.google.com/uc?export=view&id=1EnItQN0T_gXYUvfglX-RFhz8GTo5LV5W">
-          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8W87zaBgaVQ" frameborder="0"         allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-     </div>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zd_Mtyi-9Zs" frameborder="0" allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+          </div>
 
-            <!--aquí se muestra la card de teresa de calcuta para ejemplo-->
+          <div class= "content" id= "profesionPolitcs" style="display:none;">Politica</div>
+            <button class= "navBtton" id= "politicsCards"><img src= "http://drive.google.com/uc?export=view&id=1ImphTdmj008lABU0Ysb_l5k3Lk2wmRIc" >Politica</button>
+          <div class="card" id= "example2" style= "display:none;">
+            <h2>MADRE TERESA DE CALCUTA</h2>
+            <img class="photo" alt="teresita.png"
+                src="http://drive.google.com/uc?export=view&id=1EnItQN0T_gXYUvfglX-RFhz8GTo5LV5W">
+            <h3>Nombre de nacimiento: Anjezë Gonxhe Bojaxhiu</h3>
+            <h4>Su ocupación: Religiosa </h4>
+            <h4>Tiempo de vida: De año 1910 al año 1997</h4>
 
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8W87zaBgaVQ" frameborder="0"         allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+          </div>
 
-        <div id= "profesionScience" style="display:none;">Ciencia</div>
-          <button id= "scienceCards">Ciencia</button>
-            <div class="card" id= "example3" style= "display:none;">
-          <h2>MARIE CURIE</h2>
-          <h3>Maria Salomea Skłodowska-Curie</h3>
-          <h4>Su ocupación: Científica</h4>
-         <h4>Tiempo de vida: De año 1867 al año 1934</h4>
-          <img class="photo" alt="marie.png"
-       src="http://drive.google.com/uc?export=view&id=1iOQH5OrnZKvKses8EhLyTAInO2tKV_Oq">
-          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9Q3duuCXaKc" frameborder="0" allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-       </div>
+          <div class= "content" id= "profesionScience" style="display:none;">Ciencia</div>
+            <button class= "navBtton" id= "scienceCards"><img src="http://drive.google.com/uc?export=view&id=1In6U55bDomhHMole1bGHaJN3BX-jegzQ" >Ciencia</button>
+          <div class="card" id= "example3" style= "display:none;">
+            <h2>MARIE CURIE</h2>
+             <img class="photo" alt="marie.png"
+              src="http://drive.google.com/uc?export=view&id=1iOQH5OrnZKvKses8EhLyTAInO2tKV_Oq">
+            <h3>Maria Salomea Skłodowska-Curie</h3>
+            <h4>Su ocupación: Científica</h4>
+            <h4>Tiempo de vida: De año 1867 al año 1934</h4>
+
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/9Q3duuCXaKc" frameborder="0" allow="accelerometer;autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+          </div>
 
           <!--aquí se muestra la card de marie s. curie para ejemplo-->
 
       </section>
 
       <section class="generalBlock countryBlock" id="countryBlock"></section>
-
       <section class="generalBlock timeBlock" id="timeBlock"></section>
-
       <section class="generalBlock gameBlock" id="gameBlock"></section>
 
     </content>
 
-    <!-- <button id= "prueba">prueba</button> -->
-    <footer class="footText">© 2019 Las chimichangas (Andrea Díaz, KAren Garzón y
-      Nancy Rodríguez), Ilustraciones por <a class="infoLink"
-      href="https://www.behance.net/andreayanezh">Andrea Yáñez</a></footer>
+    <footer class="footText">© 2019 Las chimichangas (Andrea Díaz, Karen Garzón y
+      Nancy Rodríguez)</footer>
 
 
     <script src="main.js"></script>

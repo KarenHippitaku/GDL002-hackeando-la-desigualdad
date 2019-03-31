@@ -4,6 +4,7 @@
 
 function showNextSection(){
   document.getElementById("professionBlock").style.display = 'block';
+  document.getElementById("introText").style.display = "none";
 }
 document.getElementById("professionBtn btn").addEventListener('click',showNextSection);
 

@@ -21,10 +21,55 @@ flex-flow: wrap; */
 align-items: center;
 }
 
+header{
+  background: #2ad2ff;
+
+}
+
+.nav {
+  background: #3d84e8;
+  text-align: center;
+
+}
+
+.navBtton{
+  border: none;
+  background: none;
+  display-flex: column;
+}
+
+.card{
+  margin: 5rem;
+  text-align: center;
+}
+
+#searchBar{
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.navBtton{
+  aling-items: center;
+}
+
+.headerLogo{
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 30rem;
+  margin-bottom: 1rem;
+}
+
+
 a {
   text-decoration: none;
-  color: #000;
+
 }
+
+#introText{
+  padding: 5rem;
+
+}
+
 
 .btn {
   border: none;
@@ -34,4 +79,6 @@ a {
 
 .footText {
   font-size: 0.7rem;
+  color: #2695b2;
+  justify-content: center;
 }
